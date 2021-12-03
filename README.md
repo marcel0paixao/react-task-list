@@ -1,2 +1,5 @@
 # react-task-list
-react-task-list
+
+use npm install
+
+then, npm start
