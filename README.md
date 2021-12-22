@@ -1,5 +1,70 @@
-# react-task-list
+# React Task List
 
-use npm install
 
-then, npm start
+![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+
+<img src="/repoimg/img.jpg" alt="Screenshot">
+
+> A dynamic task list build with React Js, which uses a API to save the tasks.
+### Adjustments and improvements 
+
+The project is still under development and future updates will focus on the following tasks :
+
+- [x] React App, front-end
+- [x] API
+- [x] React app connection to API
+- [ ] Front-end treatment to prevent errors
+- [ ] Rebuild the front-end visual
+
+## 💻 Pre-requirements
+
+Before you start, make sure you meet the following requirements:
+* You have <npm>`
+
+## 🚀 Instalando <nome_do_projeto>
+
+To install React Task List, follow the steps:
+
+Linux and macOS:
+```
+<npm install>
+```
+
+Windows:
+```
+<npm install>
+```
+
+## ☕ Using React Task List
+
+To use React Task List, follow the steps
+
+```
+<npm start>
+```
+  
+## 📫 Contributing to React Task List
+<!---If your README is long, or if you have any specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+To contribute React Task List, follow these steps:
+
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Send to the original branch: `git push origin React Task List / <location>`
+5. Create the pull request.
+
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request ). 
+
+## 😄 Be one of the contributors<br>
+
+Do you want to be part of this project? Click [HERE](CONTRIBUTING.md) and read how to contribute.
+
+## 📝 License
+
+This project is under license. See the [LICENSE](LICENSE.md) file for more details.
+
+[⬆ Back to top](#react-task-list)<br> 
