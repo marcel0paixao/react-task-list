@@ -19,7 +19,7 @@ Before you start, make sure you meet the following requirements:
 * You have `<npm>`
 * You have started the [API](https://github.com/marcel0paixao/react-task-list-api)
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Installing React Task List
 
 To install React Task List, follow the steps:
 
