@@ -46,6 +46,8 @@ To use React Task List, follow the steps
 ```
 <npm start>
 ```
+
+### PLASE be sure if the API is at 3000 port and the React App at 3001, or be free to change the url parameters in the url variables, in App.jsx and Info.jsx ###
   
 ## 📫 Contributing to React Task List
 <!---If your README is long, or if you have any specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
