@@ -56,7 +56,6 @@ const App = () => {
         status: response.data.status
       }, ...tasks]
       setTasks(newTask)
-      console.log(newTask[0])
     })
   }
 
