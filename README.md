@@ -16,7 +16,7 @@ The project is still under development and future updates will focus on the foll
 ## 💻 Pre-requirements
 
 Before you start, make sure you meet the following requirements:
-* You have <npm>`
+* You have `<npm>`
 
 ## 🚀 Instalando <nome_do_projeto>
 
