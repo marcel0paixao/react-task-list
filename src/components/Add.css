@@ -2,20 +2,31 @@
     margin: 15px 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .add-task-input{
     height: 40px;
+    margin-bottom: 10px;
+    width: 200px;
+    flex-wrap: wrap;
     padding: 0 10px;
     border-radius: 5px;
     border: none;
-    flex: 2;
+    flex: 1;
     background-color: #444;
-    color: #eee;
+    color: white;
+    font-weight: bolder;
     font-size: 16px;
 }
 
 .add-task-button-container{
-    margin-left: 10px;
-    flex: 1;
+    margin-left: 5px;
+    width: 50px;
+}
+
+.add-task-line{
+    width: 100%;
+    border-color: chartreuse;
+    margin: 15px;
 }

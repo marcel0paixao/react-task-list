@@ -7,3 +7,34 @@
     padding: 30px;
     border-radius: 10px;
 }
+.tasks{
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: chartreuse;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.task-container:first-child{
+    margin-top: 0px;
+}
+.task-container:last-child{
+    margin-bottom: 0px;
+}

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import {v4 as uuidv4} from 'uuid'
 import { BrowserRouter as Router, Route} from "react-router-dom"
 import axios from "axios"
 
@@ -10,14 +9,13 @@ import Add from "./components/Add"
 import Info from "./components/Info"
 
 const App = () => {
-  //let message = 'Hello world!'
-  const [tasks, setTasks] = useState([
-    
-  ])
+  const [tasks, setTasks] = useState([])
+
+  const url = 'http://localhost:3000/'
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const { data } = await axios.get('https://jsonplaceholder.cypress.io/todos?_limit=10')
+      const { data } = await axios.get(url)
       setTasks(data)
     }
     fetchTasks()
@@ -25,25 +23,41 @@ const App = () => {
 
   const handleTaskClick = (id) => {
     const newTask = tasks.map(task =>{
-      if(task.id === id) return {...task, completed: !task.completed}
+      if(task.id === id){
+        axios.put(url+id, {
+          status: !task.status
+        }).then(function(){
+          setTasks(newTask)
+        })
+        return {...task, status: !task.status}
+      }
       return task
-    })
-    setTasks(newTask)
+    }) 
+    
   }
 
   const handleTaskDelete = (id) => {
-    const newTask = tasks.filter(task => task.id !== id)
-    setTasks(newTask)
+    axios.delete(url+id).then(function () {
+      const newTask = tasks.filter(task => task.id !== id)
+      setTasks(newTask)
+    })
   }
 
-  const handleTaskAddition = (taskTitle) => {
-    const newTask = [...tasks, {
-      title: taskTitle,
-      id: uuidv4(),
-      completed: false
-    }]
-    
-    setTasks(newTask)
+  const handleTaskAddition = (name, description) => {
+    axios.post(url, {
+      name: name,
+      description: description,
+      status: false
+    }).then(function(response) {
+      const newTask = [{
+        name: response.data.name,
+        description: response.data.description,
+        id: response.data.id,
+        status: response.data.status
+      }, ...tasks]
+      setTasks(newTask)
+      console.log(newTask[0])
+    })
   }
 
   return (
@@ -56,15 +70,17 @@ const App = () => {
           render={() => (
             <>
               <Add handleTaskAddition={handleTaskAddition}/>
-              <Tasks 
-                tasks={tasks} 
-                handleTaskClick={handleTaskClick} 
-                handleTaskDelete={handleTaskDelete}/>
+              <div className="tasks">
+                <Tasks 
+                  tasks={tasks} 
+                  handleTaskClick={handleTaskClick} 
+                  handleTaskDelete={handleTaskDelete}/>
+              </div>
             </>
           )}
         />
         <Route
-          path="/:taskTitle"
+          path="/:id"
           exact
           component={Info}
         />

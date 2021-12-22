@@ -4,23 +4,30 @@ import './Add.css'
 import Button from './Button';
 
 const Add = ({handleTaskAddition}) => {
-    const [inputData, setInputData] = useState('')
+    const [inputName, setInputName] = useState([])
+    const [inputDesc, setInputDesc] = useState([])
 
-    const handleInputChange = (e) => {
-        setInputData(e.target.value)
+    const handleInputNameChange = (e) => {
+        setInputName(e.target.value)
+    }
+    const handleInputDescChange = (e) => {
+        setInputDesc(e.target.value)
     }
 
     const handleAddTaskClick = () => {
-        handleTaskAddition(inputData)
-        setInputData('')
+        handleTaskAddition(inputName, inputDesc)
+        setInputName('')
+        setInputDesc('')
     }
 
     return ( 
         <div className="add-task-container">
-            <input onChange={handleInputChange} value={inputData} type="text" className="add-task-input"/>
+            <input onChange={handleInputNameChange} value={inputName} type="text" className="add-task-input" placeholder='Title'/>
             <div className="add-task-button-container">
-                <Button onClick={handleAddTaskClick}>Adicionar</Button>
+                <Button onClick={handleAddTaskClick}>+</Button>
             </div>
+            <input onChange={handleInputDescChange} value={inputDesc} type="text" className="add-task-input" placeholder='Description'/>
+            <hr className='add-task-line'/>
         </div>
      );
 }

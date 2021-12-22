@@ -8,12 +8,12 @@ const Task = ({task, handleTaskClick, handleTaskDelete}) => {
     const history = useHistory()
 
     const handleTaskInfoClick = () => {
-        history.push(`/${task.title}`)
+        history.push(`/${task.id}`)
     }
     return (
-        <div className="task-container" style={task.completed ? {borderLeft: '6px solid chartreuse'} : {}}>
+        <div className="task-container" style={task.status ? {borderLeft: '6px solid chartreuse'} : {}}>
             <div className="task-title" onClick={() => handleTaskClick(task.id)}>
-                {task.title}
+                {task.name ?? task.title}
             </div>
             <div className="buttons-container">
                 <button className="info-task-button" onClick={handleTaskInfoClick}>
