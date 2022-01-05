@@ -1,6 +1,6 @@
 # React Task List
 
-<img src="/repoimg/img.jpg" alt="Screenshot">
+<img src="/repoimg/img.png" alt="Screenshot">
 
 > A dynamic task list build with React Js, which uses a API to save the tasks.
 ### Adjustments and improvements 
