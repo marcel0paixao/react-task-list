@@ -14,8 +14,8 @@
     border-radius: 5px;
     border: none;
     flex: 1;
-    background-color: #444;
-    color: white;
+    background-color: #fff;
+    color: #000;
     font-weight: bolder;
     font-size: 16px;
 }
@@ -23,10 +23,11 @@
 .add-task-button-container{
     margin-left: 5px;
     width: 50px;
+    color: white;
 }
 
 .add-task-line{
     width: 100%;
-    border-color: chartreuse;
+    border-color: #AF02EB;
     margin: 15px;
 }

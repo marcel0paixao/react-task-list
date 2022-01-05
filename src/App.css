@@ -3,14 +3,22 @@
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 2px solid chartreuse;
+    border: 5px solid #AF02EB;
     padding: 30px;
     border-radius: 10px;
 }
 .tasks{
-    max-height: 600px;
+    max-height: 400px;
     overflow-y: auto;
 }
+@media (min-height: 850px)
+{
+  .tasks{
+    max-height: 600px;
+    overflow-y: auto;
+  }
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -24,7 +32,7 @@
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: chartreuse;
+  background: #AF02EB;
 }
   
 /* Handle on hover */

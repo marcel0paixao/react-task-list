@@ -1,11 +1,11 @@
 .task-container {
-	background-color: #444;
+	background-color: #fff;
 	margin: 8px 0;
 	padding: 15px 20px;
 	display: flex;
 	border-radius: 5px;
 	justify-content: space-between;
-	color: #eee;
+	color: #000;
 	align-items: center;
 }
 
@@ -21,10 +21,10 @@
 
 .remove-task-button,
 .info-task-button {
-	background-color: #444;
+	background-color: #fff;
 	border: none;
 	font-size: 24px;
-	color: chartreuse;
+	color: #AF02EB;
 	margin: 0 5px;
 }
 

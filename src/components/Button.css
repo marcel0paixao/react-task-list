@@ -1,5 +1,5 @@
 .add-button{
-    background-color: chartreuse;
+    background-color: #AF02EB;
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
@@ -13,6 +13,6 @@
 }
 
 .add-button:hover{
-    color: chartreuse;
+    color: #AF02EB;
     background-color: #444;
 }

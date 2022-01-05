@@ -27,7 +27,7 @@ const TaskDetails = () => {
             <div className="back-button-container">
                 <Button onClick={handleBackButtonClick}>&lt;=</Button>
             </div>
-            <div className="task-details-container" style={task.status ? {borderLeft: '6px solid chartreuse'} : {}}>
+            <div className="task-details-container" style={task.status ? {borderLeft: '6px solid #AF02EB'} : {}}>
                 <h2>| {task.name}</h2>
                 <p>
                     {task.description}
